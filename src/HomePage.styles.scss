@@ -1,0 +1,49 @@
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px;
+
+
+    .menu-item {
+        padding: 30px;
+        box-shadow: 1px 2px 8px #ddd;
+        border: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 240px;
+        justify-content: center;
+        flex: 1 1 auto;
+        min-width: 26.7%;
+        color: #fff;
+        margin: 30px;
+        background-position: center !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+
+
+        &:nth-child(1){
+            background: url(https://source.unsplash.com/1600x240/?JACKETS);
+        }
+        &:nth-child(2){
+            background: url(https://source.unsplash.com/1600x240/?hats,caps);
+        }
+        &:nth-child(3){
+            background: url(https://source.unsplash.com/1600x240/?shoe);
+        }
+
+        &:nth-child(4){
+            background: url(https://source.unsplash.com/1600x240/?women-clothing);
+        }
+        &:nth-child(5){
+            background: url(https://source.unsplash.com/1600x240/?men-clothing);
+        }
+    }
+    
+}
+
