@@ -1,22 +1,22 @@
 .menu-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    text-align: center;
-    align-items: center;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin: 15px;
 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        box-shadow: 0 0 3px #ddd;
+        width: 1170px;
+        margin: 0 auto;
 
     .menu-item {
-        padding: 30px;
+        padding: 0;
         box-shadow: 1px 2px 8px #ddd;
         border: 1px solid #ddd;
         display: flex;
         align-items: center;
         flex-direction: column;
-        height: 240px;
+        height: 300px;
         justify-content: center;
         flex: 1 1 auto;
         min-width: 26.7%;
@@ -25,7 +25,12 @@
         background-position: center !important;
         background-size: cover !important;
         background-repeat: no-repeat !important;
+        cursor: pointer;
+        transition: .3s;
 
+        &.large {
+            height: 380px;
+        }
 
         &:nth-child(1){
             background: url(https://source.unsplash.com/1600x240/?JACKETS);
@@ -38,11 +43,26 @@
         }
 
         &:nth-child(4){
-            background: url(https://source.unsplash.com/1600x240/?women-clothing);
+            background: url(https://source.unsplash.com/1600x240/?womens);
         }
         &:nth-child(5){
-            background: url(https://source.unsplash.com/1600x240/?men-clothing);
+            background: url(https://source.unsplash.com/1600x240/?mens);
         }
+
+        .content {
+            border: 1px solid #fff;
+            padding: 15px 15%;
+        }
+        &:hover .content {
+            background: rgba(0,0,0,0.4);
+            box-shadow: 0 0 3px #ddd;
+            
+        }
+        &:hover {
+            opacity: 0.8; 
+        }
+
+        
     }
     
 }
