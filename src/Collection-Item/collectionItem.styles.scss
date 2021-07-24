@@ -1,0 +1,51 @@
+
+.collection-item {
+    min-width: 33.3333%;
+    padding: 15px;
+}
+
+p.item-price {
+    color: #fff;
+    font-weight: 700;
+
+    &::before {
+        content: "$";
+    }
+}
+
+
+.collection-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 40px;
+    background: rgb(25, 27, 34);
+    padding: 0 20px;
+    color: #fff;
+}
+
+.preview {
+    cursor: pointer;
+    transition: .3s;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+
+    .collection-item {
+            transition: .3s;
+
+            &:hover {
+                    box-shadow: 3px 3px 3px #ddd;
+                    opacity: .8;
+            }
+    }
+
+    .collection-image {
+            height: 280px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+}
