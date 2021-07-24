@@ -1,0 +1,12 @@
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+    h2 {
+        margin: 10px 0;
+    }
+    .custom-button {
+        margin: 0 5px;
+    }
+}
