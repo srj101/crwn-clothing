@@ -1,0 +1,43 @@
+.header-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 20px 0;
+}
+a.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: monospace;
+}
+
+a.logo img {
+    height: 50px;
+}
+.logo span {
+    padding: 0 8px;
+    margin-top: 3px;
+}
+
+.options a {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 15px;
+    transition: .3s;
+
+    &:hover {
+        border-bottom: 4px solid #000;
+        border-width: thick;
+    }
+}
+
+
+
+.options {
+    margin-top: 1px;
+}
