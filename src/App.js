@@ -5,7 +5,7 @@ import HomePage from './Components/Pages/HomePage/HomePage.component';
 import ShopPage from './Components/Pages/Shop/shop.component';
 import Header from './Components/Header/header.component';
 import SignInSignUp from './Components/Pages/Sign-In-Sign-Up/Sign-In-Sign-Up.component';
-import {auth} from './Firebase/firebase.util';
+import {auth,createUserProfileDocument} from './Firebase/firebase.util';
 
 class App extends React.Component {
   constructor(){
@@ -13,13 +13,29 @@ class App extends React.Component {
 
     this.state = {
       currentUser: null
-    }
+    };
   }
-   unsubscribeFromAuth = null
+   unsubscribeFromAuth = null;
   
   componentDidMount() {
-    auth.onAuthStateChanged(user => {
-      this.setState({ currentUser : user });
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+      if(userAuth){
+        const userRef = await createUserProfileDocument(userAuth);
+
+        userRef.onSnapshot(onSnapshot =>{
+          this.setState({
+            currentUser: {
+              id: onSnapshot.id,
+              ...onSnapshot.data()
+            }
+          })
+        })
+      } else {
+        this.setState({currentUser: userAuth});
+      }
+
+      console.log(this.state);
+
     });
   }
   
