@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/srj101/crwn-clothing/static/css/main.90da3301.chunk.css",
-    "main.js": "/srj101/crwn-clothing/static/js/main.0240927b.chunk.js",
-    "main.js.map": "/srj101/crwn-clothing/static/js/main.0240927b.chunk.js.map",
-    "runtime-main.js": "/srj101/crwn-clothing/static/js/runtime-main.b766d419.js",
-    "runtime-main.js.map": "/srj101/crwn-clothing/static/js/runtime-main.b766d419.js.map",
-    "static/js/2.3f614f6c.chunk.js": "/srj101/crwn-clothing/static/js/2.3f614f6c.chunk.js",
-    "static/js/2.3f614f6c.chunk.js.map": "/srj101/crwn-clothing/static/js/2.3f614f6c.chunk.js.map",
-    "index.html": "/srj101/crwn-clothing/index.html",
-    "static/css/main.90da3301.chunk.css.map": "/srj101/crwn-clothing/static/css/main.90da3301.chunk.css.map",
-    "static/js/2.3f614f6c.chunk.js.LICENSE.txt": "/srj101/crwn-clothing/static/js/2.3f614f6c.chunk.js.LICENSE.txt"
+    "main.css": "/reza-fashion/static/css/main.90da3301.chunk.css",
+    "main.js": "/reza-fashion/static/js/main.0240927b.chunk.js",
+    "main.js.map": "/reza-fashion/static/js/main.0240927b.chunk.js.map",
+    "runtime-main.js": "/reza-fashion/static/js/runtime-main.48cfb205.js",
+    "runtime-main.js.map": "/reza-fashion/static/js/runtime-main.48cfb205.js.map",
+    "static/js/2.3f614f6c.chunk.js": "/reza-fashion/static/js/2.3f614f6c.chunk.js",
+    "static/js/2.3f614f6c.chunk.js.map": "/reza-fashion/static/js/2.3f614f6c.chunk.js.map",
+    "index.html": "/reza-fashion/index.html",
+    "static/css/main.90da3301.chunk.css.map": "/reza-fashion/static/css/main.90da3301.chunk.css.map",
+    "static/js/2.3f614f6c.chunk.js.LICENSE.txt": "/reza-fashion/static/js/2.3f614f6c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b766d419.js",
+    "static/js/runtime-main.48cfb205.js",
     "static/js/2.3f614f6c.chunk.js",
     "static/css/main.90da3301.chunk.css",
     "static/js/main.0240927b.chunk.js"
